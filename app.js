@@ -1,0 +1,1 @@
+document.body.insertAdjacentHTML("beforebegin", "<h1>SOMESHIT</h1>")
