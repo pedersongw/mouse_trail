@@ -1,3 +1,12 @@
+.dot {
+    position: absolute;
+    height: 12px; width: 12px;
+    border-radius: 50%;
+    background: teal;
+  }
+  body {
+    height: 300px;
+  }
 h1 {
     position: fixed;
     top: 50%;
