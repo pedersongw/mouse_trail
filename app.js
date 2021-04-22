@@ -2,6 +2,7 @@ let displayed = undefined;
 document.addEventListener("click", event => {
     let dot = document.createElement("div");
     dot.className = "dot";
+    dot.style.backgroundColor = "yellow";
     dot.style.left = (event.clientX - 6) + "px";
     dot.style.top = (event.clientY - 6) + "px";
     document.body.appendChild(dot);
@@ -9,18 +10,6 @@ document.addEventListener("click", event => {
     document.getElementById("test").innerHTML = displayed;
   });
 
-let counter = 1;
-window.onload = function() {
-    setInterval(function() {
-        if (counter < 20) {
-        document.getElementById("test3").innerHTML = counter.toString();
-        counter++;
-        } else {
-            counter = 1;
-            document.getElementById("test3").innerHTML = counter.toString();
-        }
-    }, 100);
-};
 
 
 let scheduled = null;
